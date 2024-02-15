@@ -1,0 +1,17 @@
+.main_body{
+    background-color: #333;
+}
+
+h1{
+    color:white;
+}
+.images_row{
+    display: flex;
+    padding-left: 30px;
+}
+
+.images_row_photo{
+    padding: 10px 10px 10px 10px;
+    width:150px;
+    height: 100px;
+}

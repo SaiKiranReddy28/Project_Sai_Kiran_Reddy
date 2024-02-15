@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video Card with Like Image-Task2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="video-card">
+    <div class="video-container">
+      <!-- Embed your video here -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jCD1JkDp_BQ?si=TW12TuNk8eVRK_9n" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="content">
+      <h2>Bosscoder Academy</h2>
+      <div class="like-dialog">I like this</div>
+      <!-- thumbs-up image -->
+      <img id="likeButton" class="like-image" onclick="toggleLike()" src="images/like.png" alt="Thumbs Up">
+    </div>
+  </div>
+  <script>
+    var isLiked=false;
+    function toggleLike(){
+        var likeButton=document.getElementById("likeButton");
+
+        if(isLiked==false){
+            isLiked=true
+            likeButton.src="images/liked.png"
+        }
+
+        else{
+            isLiked=false
+            likeButton.src="images/like.png"
+        }
+    }
+
+  </script>
+  
+</body>
+
+
+</html>
